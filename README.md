@@ -1,9 +1,9 @@
-# js-off
+# jsoff
 
 Count which JSON fields you've accessed and remove the rest.
 
 ```js
-const { jsOff, countSymbol } = require('js-off')
+const { jsOff, countSymbol } = require('@reconbot/jsoff')
 const input = {
   foo: {
     bar: 4,
