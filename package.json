@@ -1,5 +1,5 @@
 {
-  "name": "jsoff",
+  "name": "js-off",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reconbot/jsoff.git"
+    "url": "git+https://github.com/reconbot/js-off.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/reconbot/jsoff/issues"
+    "url": "https://github.com/reconbot/js-off/issues"
   },
-  "homepage": "https://github.com/reconbot/jsoff#readme",
+  "homepage": "https://github.com/reconbot/js-off#readme",
   "devDependencies": {
     "deep-freeze": "0.0.1",
     "mocha": "^6.0.0"

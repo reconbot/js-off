@@ -1,17 +1,17 @@
 const countSymbol = Symbol.for('count')
 
-const jsoff = (data) => {
+const jsOff = (data) => {
   if (typeof data !== 'object' || data === undefined || data === null) {
     return data
   }
   if (Array.isArray(data)) {
-    return data.map(i => jsoff(i))
+    return data.map(i => jsOff(i))
   }
   const readCalls = {}
   const output = {}
   for (const [key, value] of Object.entries(data)) {
     readCalls[key] = 0
-    const proxyValue = jsoff(value)
+    const proxyValue = jsOff(value)
     Object.defineProperty(output, key, {
       enumerable: true,
       get() {
@@ -41,5 +41,5 @@ const jsoff = (data) => {
   return output
 }
 
-module.exports.jsoff = jsoff
+module.exports.jsOff = jsOff
 module.exports.countSymbol = countSymbol
